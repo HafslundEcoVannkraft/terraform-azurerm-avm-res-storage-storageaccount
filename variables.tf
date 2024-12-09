@@ -182,6 +182,12 @@ DESCRIPTION
   nullable    = false
 }
 
+variable "local_user_enabled" {
+  type        = bool
+  default     = true
+  description = "Is Local User Enabled? Defaults to true."
+}
+
 variable "tags" {
   type        = map(string)
   default     = null
